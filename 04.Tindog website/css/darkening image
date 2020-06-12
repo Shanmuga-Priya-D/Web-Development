@@ -1,0 +1,18 @@
+
+//html
+<h1>Hello<h1>
+ <img  class="d-image" src="https://tse3.mm.bing.net/th?id=OIP.78PYftXZTYauzVhZm66dngHaE7&pid=Api&P=0&w=228&h=153">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//css
+.d-image{
+  filter: brightness(20%); 
+}

@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Image Slider Using HTML and CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="slider()">
+  <div class="banner">
+         <div class="slider">
+	         <img src="images/1.jpg" id="slideImg">
+	     </div>
+	     <div class="overlay">
+	         <div class="navbar">
+		          <div class="logo">
+		               <img src="l2.jpg">
+		           </div>
+				   
+		           <div class="menu-icons">
+		               <img src="u.png">
+			           <img src="c.png">
+			           <img src="m.jpg">
+		            </div>
+		      </div>
+		      <div class="content">
+			     <h1>LETS START TO DESIGN</h1>
+				 <h3>Creative Innovative Interior Design Solutions For Tomorrow </h3>
+				 
+				 <div>
+				    <button type="button">WATCH MORE</BUTTON>
+					<button type="button" class="btn-2">SUBSCRIBE</BUTTON>
+				 </div>
+		      </div>
+	      </div>
+  </div>
+
+
+<script>
+  var slideImg=document.getElementById("slideImg");
+  var images=new Array(
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg");
+  var len=images.length;
+  var i=0;
+  function slider()
+  {
+  if(i>len-1)
+    {
+	  i=0;
+	 }
+	 slideImg.src=images[i];
+	 i++;
+	 setTimeout('slider()',3000);
+}
+	 
+  
+</script>
+</body>
+</html>
